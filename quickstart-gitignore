@@ -1,0 +1,14 @@
+#Don't check in database.yml
+/config/database.yml
+
+#Don't check in coverage files
+/coverage/*
+
+#Dont Check In temp files
+/tmp/*
+
+#Don't check in log files
+/log/*
+
+#Don't check in bundler config
+ /.bundle 

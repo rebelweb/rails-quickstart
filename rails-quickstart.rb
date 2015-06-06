@@ -13,3 +13,7 @@ copy_file 'quickstart-Gemfile', 'Gemfile'
 #Load Settings File
 copy_file 'settings.yml', 'config/settings.yml'
 copy_file 'load_settings.rb', 'config/initializers/load_settings.rb'
+
+#Load .gitignore file
+remove_file '.gitignore'
+copy_file 'quickstart-gitignore', '.gitignore'
