@@ -25,6 +25,7 @@ group :development, :test do
   gem 'capybara', '~> 2.4.4', require: :false
   gem 'bullet', '~> 4.14.7', require: :false
   gem 'selenium-webdriver', '~> 2.46.2', require: :false
+  gem 'rack_session_access', '~> 0.1.1', require: :false
 end
 
 gem 'tzinfo-data', platform: [:mingw, :mswin, :x64_mingw, :jruby]
