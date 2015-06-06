@@ -21,6 +21,7 @@ group :development, :test do
   gem 'factory_girl_rails', '~> 4.5.0', require: :false
   gem 'simplecov', '~> 0.10.0', require: :false
   gem 'shoulda-matchers', '~> 2.8.0', require: :false
+  gem 'database_cleaner', '~> 1.4.1', require: :false
   gem 'capybara', '~> 2.4.4', require: :false
   gem 'bullet', '~> 4.14.7', require: :false
   gem 'selenium-webdriver', '~> 2.46.2', require: :false
