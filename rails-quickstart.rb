@@ -17,3 +17,7 @@ copy_file 'load_settings.rb', 'config/initializers/load_settings.rb'
 #Load .gitignore file
 remove_file '.gitignore'
 copy_file 'quickstart-gitignore', '.gitignore'
+
+#Load sidekiq settings
+copy_file 'sidekiq.yml', 'config/sidekiq.yml'
+copy_file 'set_active_job_queue_adapter.rb', 'config/initializers/set_active_job_queue_adapter.rb'
