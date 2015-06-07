@@ -57,5 +57,8 @@ insert_into_file 'config/environments/development.rb', before: "# config.action_
 end
 
 after_bundle do
-
+  run 'git init'
+  run 'git add --all'
+  run 'git commit -m "Initial Commit"'
+  run 'atom .'
 end
