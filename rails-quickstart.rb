@@ -35,6 +35,24 @@ create_file 'spec/mailers/.keep'
 create_file 'spec/routing/.keep'
 create_file 'spec/support/.keep'
 
+#Bullet Setup
+insert_into_file 'config/environments/development.rb', before: "Rails.application.configure do\n" do <<-RUBY
+  require 'bullet'
+
+  RUBY
+end
+
+insert_into_file 'config/environments/development.rb', before: "# config.action_view.raise_on_missing_translations = true\n" do <<-RUBY
+
+  #Configure Bullet
+  config.after_initialize do
+    Bullet.enable = true
+    Bullet.alert = true
+    Bullet.bullet_logger = true
+  end
+  RUBY
+end
+
 after_bundle do
 
 end
