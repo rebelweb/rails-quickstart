@@ -22,6 +22,9 @@ copy_file 'quickstart-gitignore', '.gitignore'
 copy_file 'sidekiq.yml', 'config/sidekiq.yml'
 copy_file 'set_active_job_queue_adapter.rb', 'config/initializers/set_active_job_queue_adapter.rb'
 
+#Add a basic 503 Unavailable Page
+copy_file '503.html', 'public/503.html'
+
 #Setup RSpec
 copy_file 'quickstart-rails_helper.rb', 'spec/rails_helper.rb'
 copy_file 'quickstart-spec_helper.rb', 'spec/spec_helper.rb'
