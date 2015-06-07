@@ -17,15 +17,15 @@ gem 'capistrano', '~> 3.4.0'
 gem 'therubyracer', platform: :ruby
 
 group :development, :test do
-  gem 'rspec-rails', '~> 3.2.2', require: :false
-  gem 'factory_girl_rails', '~> 4.5.0', require: :false
-  gem 'simplecov', '~> 0.10.0', require: :false
-  gem 'shoulda-matchers', '~> 2.8.0', require: :false
-  gem 'database_cleaner', '~> 1.4.1', require: :false
-  gem 'capybara', '~> 2.4.4', require: :false
-  gem 'bullet', '~> 4.14.7', require: :false
-  gem 'selenium-webdriver', '~> 2.46.2', require: :false
-  gem 'rack_session_access', '~> 0.1.1', require: :false
+  gem 'rspec-rails', '~> 3.2.2'
+  gem 'factory_girl_rails', '~> 4.5.0'
+  gem 'simplecov', '~> 0.10.0'
+  gem 'shoulda-matchers', '~> 2.8.0'
+  gem 'database_cleaner', '~> 1.4.1'
+  gem 'capybara', '~> 2.4.4'
+  gem 'bullet', '~> 4.14.7'
+  gem 'selenium-webdriver', '~> 2.46.2'
+  gem 'rack_session_access', '~> 0.1.1'
 end
 
 gem 'tzinfo-data', platform: [:mingw, :mswin, :x64_mingw, :jruby]
