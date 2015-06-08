@@ -22,6 +22,11 @@ copy_file 'quickstart-gitignore', '.gitignore'
 copy_file 'sidekiq.yml', 'config/sidekiq.yml'
 copy_file 'set_active_job_queue_adapter.rb', 'config/initializers/set_active_job_queue_adapter.rb'
 
+#Load database.yml
+remove_file 'config/database.yml'
+copy_file 'quickstart-database.yml', 'config/database.yml'
+gsub_file 'config/database.yml', 'app_name', app_name
+
 #Add a basic 503 Unavailable Page
 copy_file '503.html', 'public/503.html'
 
