@@ -6,6 +6,12 @@ def source_paths
     [File.expand_path(File.dirname(__FILE__))]
 end
 
+# Setup Code Checks
+
+append_to_file 'Gemfile', '# Extra Libraries Used By Application'
+gem 'rubocop', group: [:development, :test]
+gem 'brakeman', group: [:development, :test], require: false
+
 # Setup Environment Variables
 gem 'dotenv-rails', group: [:development, :test]
 
